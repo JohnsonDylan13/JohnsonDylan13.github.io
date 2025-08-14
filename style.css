@@ -1,0 +1,78 @@
+body {
+    background: turquoise;
+    color: blanchedalmond;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#all-contents {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* navigation menu */ 
+nav {
+    background: indianred;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    background: lightblue;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    flex: 1;
+    margin: 0;
+}
+
+#nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-li { 
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* main container area beneath menu */
+main { 
+    background: orangered;
+    display: flex;
+    border: darkturquoise dotted;
+    margin-top: 20px;
+}
+
+.sidebar {
+    margin-right: 25px;
+    padding: 10px; 
+}
+
+.sidebar-img {
+    width: 200px;
+}
+
+.content {
+    flex: 1;
+    padding: 15px;
+}
+
+/* interests section style */
+#interests { 
+    border: 8px darkturquoise ridge;
+    border-radius: 6%; 
+    padding: 8px;
+    margin-top: 20px;
+}
+
+h2, h3 {
+    margin: 0px;
+}

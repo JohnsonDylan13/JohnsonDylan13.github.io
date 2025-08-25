@@ -17,10 +17,12 @@ nav {
     display: flex;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 a {
-    background: lightblue;
+    background: turquoise;
+    border-radius: 10%;
 }
 
 h1 {
@@ -29,6 +31,7 @@ h1 {
     color: whitesmoke;
     flex: 1;
     margin: 0;
+    font-size: 35px;
 }
 
 #nav-ul {
@@ -36,6 +39,7 @@ h1 {
     margin: 0;
     padding: 0;
     display: flex;
+    font-size: 25px;
 }
 
 .nav-li { 
@@ -43,12 +47,18 @@ h1 {
     padding: 0 10px;
 }
 
+#interests {
+    font-size: 25px;
+}
+
 /* main container area beneath menu */
 main { 
     background: orangered;
     display: flex;
-    border: darkturquoise dotted;
+    border: 5px darkturquoise dotted;
+    border-radius: 30px;
     margin-top: 20px;
+    font-size: 25px;
 }
 
 .sidebar {
@@ -58,6 +68,7 @@ main {
 
 .sidebar-img {
     width: 200px;
+    border-radius: 100px;
 }
 
 .content {
@@ -67,7 +78,7 @@ main {
 
 /* interests section style */
 #interests { 
-    border: 8px darkturquoise ridge;
+    border: 15px darkturquoise ridge;
     border-radius: 6%; 
     padding: 8px;
     margin-top: 20px;
@@ -100,5 +111,7 @@ h2, h3 {
 
 #portfolio a {
     text-decoration: none;
-    color: #454545
+    color: #454545;
+    border: ridge turquoise;
+    
 }

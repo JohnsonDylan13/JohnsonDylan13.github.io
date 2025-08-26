@@ -32,29 +32,28 @@ $(function () {
 
     // TODO 2 - Create Platforms
 
-    createPlatform(350, 620, 200, 20, "lavender"); 
-    createPlatform(700, 550, 200, 20);
-    createPlatform(1000, 520, 100, 20)
-    createPlatform(1200, 480, 180, 20)
-    createPlatform(1245,400,95,20)
-    createPlatform(1300, 190, 90, 20)
-    createPlatform(1000, 290, 90, 20)
-    createPlatform(800, 200, 120, 20)
-    createPlatform(500, 240, 100, 20)
-    createPlatform(150, 200, 60, 20)
-    createPlatform(290, 200, 60, 20)
-    createPlatform(290, 200, 20, 100)
-    createPlatform(290, 390, 20, 100)
-    createPlatform(150, 200, 20, 290)
-    createPlatform(150, 490, 160, 20)
-    createPlatform(150, 200, 20, 20)
+    createPlatform(350, 620, 200, 20, "Fuchsia"); 
+    createPlatform(700, 550, 200, 20, "Fuchsia");
+    createPlatform(1000, 520, 100, 20, "Fuchsia")
+    createPlatform(1200, 480, 180, 20, "Fuchsia")
+    createPlatform(1245,400,95,20, "Fuchsia")
+    createPlatform(1300, 190, 90, 20, "Fuchsia")
+    createPlatform(1000, 290, 90, 20, "Fuchsia", 1000, 1200, 1)
+    createPlatform(800, 200, 120, 20, "Fuchsia")
+    createPlatform(500, 240, 100, 20, "Fuchsia")
+    createPlatform(150, 200, 60, 20, "Fuchsia")
+    createPlatform(290, 200, 60, 20, "Fuchsia")
+    createPlatform(290, 390, 20, 100, "Fuchsia")
+    createPlatform(150, 200, 20, 290, "Fuchsia")
+    createPlatform(150, 490, 160, 20, "Fuchsia")
+    createPlatform(150, 200, 20, 20, "Fuchsia")
   
 
 
 
     // TODO 3 - Create Collectables
 
-    createCollectable("steve", 1030, 450);
+    createCollectable("steve", 1030, 450, 0, 1, 1000, 1100, 2);
     createCollectable("database", 1325, 140);
     createCollectable("grace", 210, 430);
 

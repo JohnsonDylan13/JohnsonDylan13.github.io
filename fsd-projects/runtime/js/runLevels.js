@@ -77,7 +77,7 @@ var runLevels = function (window) {
       };
       reward.onProjectileCollision = function() {
       game.increaseScore(300);
-      reward.shrink(); 
+      reward.flyTo(0,0); 
     }
     }
       createReward(1100, groundY - 250);

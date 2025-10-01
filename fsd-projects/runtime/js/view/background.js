@@ -71,7 +71,7 @@ var background = function (window) {
             for (var i = 0; i < 10; i++) {
                 var buildingHeight = Math.random() * canvasHeight;
                 var building = 
-                draw.rect(75, buildingHeight, "LightGray", "Black", 1);
+                draw.rect(75, buildingHeight, "goldenrod", "darkgoldenrod", 1);
                 building.x = 200 * i;
                 building.y = groundY - buildingHeight;
                 

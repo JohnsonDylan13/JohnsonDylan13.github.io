@@ -92,7 +92,6 @@ var runLevels = function (window) {
       marker.y = groundY - y;
       game.addGameItem(marker);
       marker.velocityX = -0.5;
-
       marker.onPlayerCollision = function() {
         startLevel();
         game.changeIntegrity(+100);
@@ -103,6 +102,7 @@ var runLevels = function (window) {
       }
       }
       createMarker(1200, groundY - 237)
+      
 
 
     function startLevel() {

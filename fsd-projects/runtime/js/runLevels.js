@@ -26,27 +26,31 @@ var runLevels = function (window) {
     sawBladeHitZone.x = x;
     sawBladeHitZone.y = y;
     game.addGameItem(sawBladeHitZone);
-    var obstacleImage = draw.bitmap("img/sawblade.png");
+    var obstacleImage = draw.bitmap("img/tumblehweed.png");
     sawBladeHitZone.addChild(obstacleImage);
-    obstacleImage.x = -25;
-    obstacleImage.y = -25;
+    obstacleImage.x = -60;
+    obstacleImage.y = -30;
+    obstacleImage.scaleX = .4;
+    obstacleImage.scaleY = .4;
+    sawBladeHitZone.rotationalVelocity = -1;
     }
-    createSawblade(800, 300);
-    createSawblade(1000, 200);
-    createSawblade(1200,300);
+    createSawblade(800, groundY - 20 );
+    createSawblade(1000, groundY - 20);
+    createSawblade(1200, groundY - 100);
 
 
     function createEnemy(x, y) {
     var enemy = game.createGameItem("enemy", 25);
-    var redSquare = draw.rect(50, 50,"red");
-    redSquare.x = -25;
-    redSquare.y = -25;
-    enemy.addChild(redSquare);
+    var meanBird = draw.bitmap("img/votur.png")
+    meanBird.x = -60;
+    meanBird.y = -45;
+    meanBird.scaleX = .5;
+    meanBird.scaleY = .5;
+    enemy.addChild(meanBird);
     enemy.x = x;
     enemy.y = groundY - y;
     game.addGameItem(enemy);
     enemy.velocityX = -1;
-    enemy.rotationalVelocity = -1;
     enemy.onPlayerCollision = function () {
       game.changeIntegrity(-10);
     };
@@ -61,16 +65,17 @@ var runLevels = function (window) {
     createEnemy(1200, groundY - 250);
 
     function createReward(x, y) {
-      var reward = game.createGameItem("reward", 25);
-      var greenCircle = draw.circle(25, "green", 1, 1);
-      greenCircle.x = -25;
-      greenCircle.y = -25;
-      reward.addChild(greenCircle);
+      var reward = game.createGameItem("reward", 20);
+      var waterDropplet = draw.bitmap("img/wader.png")
+      waterDropplet.x = -40;
+      waterDropplet.y = -40;
+      waterDropplet.scaleX = .5;
+      waterDropplet.scaleY = .5;
+      reward.addChild(waterDropplet);
       reward.x = x;
       reward.y = groundY - y;
       game.addGameItem(reward); 
       reward.velocityX = -1;
-      reward.rotationalVelocity = -1;
       reward.onPlayerCollision = function () {
       game.increaseScore(100);
       reward.flyTo(0,0)
@@ -84,10 +89,12 @@ var runLevels = function (window) {
 
       function createMarker(x, y) {
       var marker = game.createGameItem("Marker", 25);
-      var blueSquare = draw.rect(50, 100, "blue");
-      blueSquare.x = -25;
-      blueSquare.y = -25;
-      marker.addChild(blueSquare);
+      var yellerFlag = draw.bitmap("img/sixthflag.png");
+      yellerFlag.x = -60;
+      yellerFlag.y = -40;
+      yellerFlag.scaleX = .5;
+      yellerFlag.scaleY = .6;
+      marker.addChild(yellerFlag);
       marker.x = x;  
       marker.y = groundY - y;
       game.addGameItem(marker);

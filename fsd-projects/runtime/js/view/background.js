@@ -41,11 +41,11 @@ var background = function (window) {
             // TODO 1:
             // this currently fills the background with an obnoxious yellow;
             // you should modify both the height and color to suit your game
-            var backgroundFill = draw.bitmap("img/deserr.jpg");
-            backgroundFill.x = 0;
-            backgroundFill.y = groundY - 500;
-            backgroundFill.scaleX = 5;
-            backgroundFill.scaleY = 5;
+            var backgroundFill = draw.rect(canvasWidth, groundY, "khaki")
+           // backgroundFill.x = 0;
+           // backgroundFill.y = groundY - 500;
+           // backgroundFill.scaleX = 5;
+           // backgroundFill.scaleY = 5;
             background.addChild(backgroundFill);
             
 
@@ -59,7 +59,7 @@ var background = function (window) {
             background.addChild(moon);
 
             for (var i = 0; i < 101; i++) {
-                var circle = draw.circle(5, "white", "LightGray", 2);
+                var circle = draw.circle(5, "yellow", "yellow", 2);
                 circle.x = canvasWidth * Math.random();
                 circle.y = groundY * Math.random();
                 background.addChild(circle);
@@ -69,7 +69,7 @@ var background = function (window) {
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             for (var i = 0; i < 10; i++) {
-                var buildingHeight = Math.random() * canvasHeight;
+                var buildingHeight = Math.random() * 300;
                 var building = 
                 draw.rect(75, buildingHeight, "goldenrod", "darkgoldenrod", 1);
                 building.x = 200 * i;
@@ -106,7 +106,7 @@ var background = function (window) {
             // TODO 4: Part 2 - Parallax
             for (var i = 0; i < buildings.length; i++) {
                 var eachElement = buildings[i];
-                eachElement.x = eachElement.x - 3;
+                eachElement.x = eachElement.x - .5;
                 if (eachElement.x < -200) {
                     eachElement.x = canvasWidth;
                 }
